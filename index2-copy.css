@@ -1,0 +1,140 @@
+/* Global Styling */
+
+body{
+  margin:0;
+  padding: 0;
+  font-family: 'Kalam', cursive;
+}
+
+.main-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.strip{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: /* #302cbd;*/ #0c046b;
+}
+
+.container-calculator{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.container-calculator h1{
+  font-size: 3em;
+  color: #302cbd;
+  FONT-WEIGHT: 700;
+}
+
+.input-price,
+.reduction{
+  width: 90%;
+  padding: 1em 2em;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.input-price:focus,
+.reduction:focus{
+  background-color: #d7e0f8;
+}
+
+.check-btn,
+.reset-btn{
+  width: 20%;
+  min-width: 200px;
+  padding: 1em 2em;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.check-btn{
+  margin: 2em 0;
+  background-color: #7c93f3;
+}
+
+.check-btn:hover{
+  cursor: pointer;
+  background-color: #636ff3;
+}
+
+.check-btn:focus{
+  background-color: #302cbd;
+}
+
+
+.reset-btn{
+  background-color: #f8abab;
+  color: #302cbd;
+  margin:0;
+}
+
+.reset-btn:hover{
+  cursor: pointer;
+  background-color:#fb7e73;
+  color: #fff;
+  
+}
+
+.reset-btn:focus{
+  background-color: #e65852;
+  color: #fff;
+}
+
+.final-container{
+  display: none;
+}
+
+.final-container-visible{
+  display: block;
+}
+
+
+
+.final-price{
+ font-size: 2em;
+}
+
+.container-img{
+  width: 50%;
+  height: 80%;
+  background-image: url('./img/dollars.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media(max-width: 900px){
+  .container-img{
+    display: none;
+  }
+
+  .strip{
+    width:100%;
+    background-color: #fff;
+  }
+
+  .container-calculator{
+    width: 90%;
+    border: none;
+  }
+  
+}
